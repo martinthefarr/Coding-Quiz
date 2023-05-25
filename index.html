@@ -5,18 +5,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/Coding-Quiz/assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <Title>Coding Quiz</Title>
 </Head>
 
 <body>
     <section class="highscores">
-        <a href="highscores.html"> View Highscores</a>
+        <a href="./highscores.html"> View Highscores</a>
     </section>
 
     <section class="timer">
         Seconds Left: <span id="seconds">75</span>
     </section>
+    
+    <main id="quiz-container">
+        Coding Quiz Game
+        <p>Awnser the Questions correctly as fast as possible to attain the highest score. If you awnser incorrectly you
+            will be penalized 10 seconds!</p>
+    </main>
+
     <div class="box">
         <div class="start-btn">Start</div>
         <div class="time" style="text-align:center;"></div>
@@ -31,8 +38,15 @@
             </div>
             <button id="next-btn">Next</button>
         </div>
-        <script src="/Coding-Quiz/assets/script.js"></script>
+       
     </div>
+    <section class="input hide">
+        <h3>Enter intials here</h3>
+        <input type="text" id="intials">
+        <button id="end-btn">Submit</button>
+    </section>
+        
+    <script src="./assets/JS/script.js"></script>
 </body>
 
 </html>

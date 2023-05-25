@@ -129,8 +129,23 @@ start.addEventListener("click", function () {
     // starts timer
     setTime()
     // hides start button and timer
-    
+
 })
+
+var secondsLeft = 75
+var timerInterval;
+
+function setTime() {
+    timerInterval = setInterval(function () {
+        secondsLeft--;
+        document.querySelector("#seconds").textContent = secondsLeft
+        if (secondsLeft <= 0) {
+            clearInterval(timerInterval)
+            // end game execute game over function
+            gameover()
+        }
+    }, 1000);
+}
 
 var quizIndex = 0
 
@@ -149,16 +164,38 @@ function startQuiz() {
 function checkAwnser() {
     console.log(this)
     // if else statment if awnser is correct
-    if (quizArry[quizIndex].correct===this.textContent) {
-        
+    if (quizArry[quizIndex].correct === this.textContent) {
+        console.log("correct")
     } else {
-        false
+        console.log("Wrong")
+        secondsLeft -= 10
     }
     // make quizIndex go up 1
-    quizIndex ++
+    quizIndex++
     // execute start quiz
-    startQuiz()
+    if (quizIndex >= quizArry.length) {
+        // execute game over function
+        gameover()
+    } else {
+        startQuiz()
+    }
+
 }
+function gameover() {
+    clearInterval(timerInterval)
+    document.querySelector(".box").style.display = "none";
+    document.querySelector(".input").classList.remove("hide")
+}
+
+document.querySelector("#end-btn").addEventListener("click", function () {
+    var player = document.querySelector("#intials").value
+    var playerobject = { player: player, score: secondsLeft }
+    var leaderboard = JSON.parse(localStorage.getItem("playerinfo")) || []
+    leaderboard.push(playerobject)
+    localStorage.setItem("playerinfo", JSON.stringify(leaderboard))
+    window.location.replace("./highscores.html")
+
+})
 
 
 
