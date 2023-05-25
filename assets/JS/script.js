@@ -1,5 +1,5 @@
 var start = document.querySelector(".start-btn")
-
+var replaybtn = document.querySelector(".replay")
 const quizArry = [
     {
         id: "1",
@@ -131,6 +131,11 @@ start.addEventListener("click", function () {
     
 
 })
+// console.log(replaybtn)
+// replaybtn.addEventListener("click", function () {
+//     startQuiz()
+//     setTime()
+// })
 
 document.querySelector(".timer").style.display = "none";
 
@@ -204,9 +209,11 @@ document.querySelector("#end-btn").addEventListener("click", function () {
     window.location.replace("./highscores.html")
 
 })
+// 
+var leaderboard = JSON.parse(localStorage.getItem("playerinfo"))
 
 
-
+console.log(leaderboard)
 // GIVEN I am taking a code quiz
 // WHEN I click the start button
 // THEN a timer starts and I am presented with a question
