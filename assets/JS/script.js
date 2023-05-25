@@ -128,7 +128,7 @@ start.addEventListener("click", function () {
     startQuiz()
     // starts timer
     setTime()
-    // hides start button and timer
+    
 
 })
 
@@ -152,11 +152,9 @@ function setTime() {
 
 var quizIndex = 0
 
-function startQuiz() {
-    
+function startQuiz() {   
     document.querySelector(".box").classList.remove("hide")
-    document.querySelector("#box1").style.display = "none";
-    
+    document.querySelector("#box1").style.display = "none"; 
     document.querySelector("#question").textContent = quizArry[quizIndex].question
     document.querySelector("#awnser-buttons").innerHTML = ""
     for (var i = 0; i < 4; i++) {
@@ -193,6 +191,9 @@ function gameover() {
     document.querySelector(".box").style.display = "none";
     document.querySelector(".input").classList.remove("hide")
 }
+
+var player;
+var playerobject;
 
 document.querySelector("#end-btn").addEventListener("click", function () {
     var player = document.querySelector("#intials").value
