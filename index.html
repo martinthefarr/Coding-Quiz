@@ -10,22 +10,27 @@
 </Head>
 
 <body>
-    <section class="highscores">
-        <a href="./highscores.html"> View Highscores</a>
-    </section>
+    <div id="box1">
+        <section class="highscores">
+            <a href="./highscores.html"> View Highscores</a>
+        </section>
 
-    <section class="timer">
-        Seconds Left: <span id="seconds">75</span>
-    </section>
-    
-    <main id="quiz-container">
-        Coding Quiz Game
-        <p>Awnser the Questions correctly as fast as possible to attain the highest score. If you awnser incorrectly you
-            will be penalized 10 seconds!</p>
-    </main>
+        <section class="timer">
+            Seconds Left: <span id="seconds">75</span>
+        </section>
 
-    <div class="box">
-        <div class="start-btn">Start</div>
+        <main id="quiz-container">
+            <h1 id="box1h1">Coding Quiz Game</h1>
+
+            <p>Awnser the Questions correctly as fast as possible to attain the highest score. If you awnser incorrectly
+                you
+                will be penalized 10 seconds!</p>
+            <div class="start-btn">Start</div>
+        </main>
+    </div>
+
+    <div class="box hide">
+       
         <div class="time" style="text-align:center;"></div>
         <h1>Coding Quiz</h1>
         <div class="Quiz">
@@ -38,14 +43,14 @@
             </div>
             <button id="next-btn">Next</button>
         </div>
-       
+
     </div>
     <section class="input hide">
         <h3>Enter intials here</h3>
         <input type="text" id="intials">
         <button id="end-btn">Submit</button>
     </section>
-        
+
     <script src="./assets/JS/script.js"></script>
 </body>
 

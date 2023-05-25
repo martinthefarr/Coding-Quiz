@@ -132,7 +132,10 @@ start.addEventListener("click", function () {
 
 })
 
+document.querySelector(".timer").style.display = "none";
+
 var secondsLeft = 75
+
 var timerInterval;
 
 function setTime() {
@@ -150,6 +153,10 @@ function setTime() {
 var quizIndex = 0
 
 function startQuiz() {
+    
+    document.querySelector(".box").classList.remove("hide")
+    document.querySelector("#box1").style.display = "none";
+    
     document.querySelector("#question").textContent = quizArry[quizIndex].question
     document.querySelector("#awnser-buttons").innerHTML = ""
     for (var i = 0; i < 4; i++) {

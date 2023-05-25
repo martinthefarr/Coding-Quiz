@@ -5,11 +5,13 @@
     box-sizing: border-box;
 
 }
+
 body {
     background-color: rgb(13, 141, 30);
 
 }
-.box{
+
+.box {
     background-color: aliceblue;
     padding: 30px;
     border-radius: 30px;
@@ -17,42 +19,48 @@ body {
     max-width: 600px;
     margin: 100px auto 0;
 }
-.box h1{
+
+.box h1 {
     font-size: 50px;
-    font-weight: 600; 
+    font-weight: 600;
     color: rgb(30, 7, 123);
     border-bottom: 5px solid #333;
     padding: 25px;
 }
-.quiz{
+
+.quiz {
     padding: 25px 0;
 }
-#question{
+
+#question {
     padding: 30px;
     font-size: 40px;
 }
 
-.btn{
+.btn {
     background-color: aliceblue;
     color: black;
     font-weight: 500;
     width: 100%;
     border: 1px solid black;
-    padding:25px;
+    padding: 25px;
     margin: 10px 0;
     text-align: left;
     border-radius: 20px;
     cursor: pointer;
     transition: 0.3s;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: rgb(7, 7, 7);
-    color:rgb(250, 247, 245)
+    color: rgb(250, 247, 245)
 }
-#next-btn{
+
+#next-btn {
     display: none;
 }
-.start-btn{
+
+.start-btn {
     cursor: pointer;
     border: 1px solid black;
     border-radius: 10px;
@@ -61,13 +69,47 @@ body {
     text-align: center;
     transition: 0.3s;
 }
-.start-btn:hover{
-    background-color: rgb(13, 8, 92);
-    color:rgb(250, 247, 245)
-}
-.time{
 
+.start-btn:hover {
+    background-color: rgb(13, 8, 92);
+    color: rgb(250, 247, 245)
 }
+
 .hide {
     display: none;
+}
+
+.highscores a {
+    justify-content: center;
+    padding: 10px;
+}
+
+#box1 {
+    background-color: aliceblue;
+    padding: 30px;
+    border-radius: 30px;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+}
+
+#box1h1 {
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(30, 7, 123);
+    border-bottom: 5px solid #333;
+    padding: 25px;
+}
+
+p {
+    padding: 25px;
+}
+
+.input {
+    background-color: aliceblue;
+    padding: 30px;
+    border-radius: 30px;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
 }
