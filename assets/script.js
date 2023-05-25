@@ -119,7 +119,7 @@ const quizArry = [
             "Money wasted by government",
             "All of the above",
         ],
-        correct: "Lack of any value"
+        correct: "All of the above"
     },
 ]
 
@@ -127,8 +127,9 @@ start.addEventListener("click", function () {
     // start will begin quiz
     startQuiz()
     // starts timer
+    setTime()
     // hides start button and timer
-
+    
 })
 
 var quizIndex = 0
@@ -151,7 +152,7 @@ function checkAwnser() {
     if (quizArry[quizIndex].correct===this.textContent) {
         
     } else {
-        
+        false
     }
     // make quizIndex go up 1
     quizIndex ++

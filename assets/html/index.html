@@ -5,16 +5,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/Coding-Quiz/assets/style.css">
+    <link rel="stylesheet" href="/Coding-Quiz/assets/css/style.css">
     <Title>Coding Quiz</Title>
 </Head>
 
 <body>
+    <section class="highscores">
+        <a href="highscores.html"> View Highscores</a>
+    </section>
+
+    <section class="timer">
+        Seconds Left: <span id="seconds">75</span>
+    </section>
     <div class="box">
         <div class="start-btn">Start</div>
+        <div class="time" style="text-align:center;"></div>
         <h1>Coding Quiz</h1>
         <div class="Quiz">
-            <h2 id="question">Questions goes here</h2>
+            <h2 id="question">Questions</h2>
             <div id="awnser-buttons">
                 <button class="btn">Awnser 1 </button>
                 <button class="btn">Awnser 2 </button>
@@ -23,7 +31,7 @@
             </div>
             <button id="next-btn">Next</button>
         </div>
-        <script src="./script.js"></script>
+        <script src="/Coding-Quiz/assets/script.js"></script>
     </div>
 </body>
 
