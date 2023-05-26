@@ -1,5 +1,11 @@
 var start = document.querySelector(".start-btn")
-var replaybtn = document.querySelector("#replay")
+// var replaybtn = document.querySelector("#replay")
+var backtostart = document.querySelector("#replay")
+ 
+function backtostart() {
+    document.querySelector(".box").classList.remove("hide")
+    document.querySelector("#box1").style.display = "none"; 
+}
 const quizArry = [
     {
         id: "1",
