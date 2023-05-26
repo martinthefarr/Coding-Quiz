@@ -1,5 +1,5 @@
 var start = document.querySelector(".start-btn")
-var replaybtn = document.querySelector(".replay")
+var replaybtn = document.querySelector("#replay")
 const quizArry = [
     {
         id: "1",
