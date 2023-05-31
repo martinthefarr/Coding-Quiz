@@ -143,7 +143,7 @@ start.addEventListener("click", function () {
 //     setTime()
 // })
 
-document.querySelector(".timer").style.display = "none";
+// document.querySelector(".timer").style.display = "none";
 
 var secondsLeft = 75
 
